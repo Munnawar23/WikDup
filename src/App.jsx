@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import About from './sections/About'
 import Services from './sections/Services'
-import ProjectShowcase from './sections/ProjectShowCase'
+import ProjectShowcase from './sections/ProjectShowcase';
 
 const App = () => {
   return (
