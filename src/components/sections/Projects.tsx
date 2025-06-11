@@ -29,10 +29,10 @@ const Projects = () => {
             variants={projectVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            {/* Left: Just the image */}
+            {/* Left: Project Image */}
             <div className="w-full md:w-1/2">
               <img
                 src={project.imageUrl}
@@ -41,22 +41,26 @@ const Projects = () => {
               />
             </div>
 
-            {/* Right: Plain text (no Card) */}
+            {/* Right: Project Details */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0 px-4">
               <p className="mb-2 text-lg">{project.year}</p>
               <h3 className="mb-2 text-2xl font-semibold">{project.title}</h3>
               <p className="mb-2 text-3xl lg:text-4xl">{project.description}</p>
               <p className="mb-4 text-lg lg:text-2xl">{project.details}</p>
 
-              <table className="min-w-full text-lg lg:text-xl">
+              <table className="min-w-full text-lg lg:text-xl border-t border-b border-gray-300 dark:border-gray-600">
                 <tbody>
-                  <tr>
-                    <td className="px-6 py-4 font-medium">Duration</td>
-                    <td className="px-6 py-4">{project.figures.duration}</td>
-                  </tr>
-                  <tr>
+                  <tr className="border-b border-gray-300 dark:border-gray-600">
                     <td className="px-6 py-4 font-medium">Tech Stack</td>
                     <td className="px-6 py-4">{project.figures.techStack}</td>
+                  </tr>
+                  <tr className="border-b border-gray-300 dark:border-gray-600">
+                    <td className="px-6 py-4 font-medium">Platform</td>
+                    <td className="px-6 py-4">{project.figures.platform}</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-medium">Location</td>
+                    <td className="px-6 py-4">{project.figures.location}</td>
                   </tr>
                 </tbody>
               </table>

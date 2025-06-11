@@ -8,7 +8,8 @@ export const PROJECTS = [
     imageUrl: "/project-1.webp",
     figures: {
       techStack: "React JS",
-      duration: "1 month",
+      platform: "Desktop and Mobile Phones",
+      location: "Udaipur",
     },
   },
   {
@@ -20,8 +21,8 @@ export const PROJECTS = [
     imageUrl: "/project-2.webp",
     figures: {
       techStack: "React JS, Framer Motion",
-      duration: "1 month",
+      platform: "Desktop and Mobile Phones",
+      location: "Udaipur",
     },
   },
-
 ];
