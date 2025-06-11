@@ -9,12 +9,14 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-sky-50 dark:bg-gray-900 text-emerald-950 dark:text-emerald-100 border-t border-emerald-200 dark:border-emerald-800">
+    <footer className="bg-sky-50 dark:bg-gray-900 text-black dark:text-gray-300 border-t border-gray-00 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 py-12 space-y-10">
         {/* Contact Title Section */}
         <div className="text-center space-y-3">
-          <h2 className="text-3xl font-bold">CONTACT US</h2>
-          <p className="text-base text-gray-700 dark:text-gray-300">
+          <h2 className="text-3xl font-bold text-blue-900 dark:text-white">
+            CONTACT US
+          </h2>
+          <p className="text-base">
             Have questions or need more information? Get in touch with us, and we’ll be happy to assist you.
           </p>
         </div>
@@ -39,7 +41,7 @@ const Footer = () => {
         </div>
 
         {/* Socials and Copyright */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-emerald-200 dark:border-emerald-800">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-300 dark:border-gray-700">
           <div className="flex space-x-6 text-2xl mb-4 md:mb-0">
             <a
               href="https://www.instagram.com"

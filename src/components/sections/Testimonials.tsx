@@ -12,33 +12,37 @@ const Testimonials = () => {
 
   return (
     <section
-      className="bg-sky-50 py-6 md:mt-0 dark:bg-[#0f172a] px-4 "
       id="reviews"
+      className="flex flex-col items-center bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-200 py-16 md:py-24 px-4 md:px-8"
     >
-      <h2 className="text-center text-4xl font-semibold tracking-tighter text-emerald-950 dark:text-white">
+      <h2 className="mb-12 text-center text-4xl font-semibold tracking-tighter text-blue-900 dark:text-white">
         What Clients Say
       </h2>
 
-      <div className="container mx-auto mt-12 flex flex-col items-center gap-y-6 gap-x-8 lg:flex-row lg:justify-between lg:items-stretch">
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:justify-between w-full max-w-7xl">
         {TESTIMONIALS.map((testimonial, index) => (
           <motion.div
             key={index}
-            className="flex w-full max-w-[300px] flex-1 flex-col items-start rounded-2xl bg-white dark:bg-zinc-900 p-6 text-zinc-800 dark:text-zinc-100 shadow-md min-h-[500px]"
+            className="flex w-full max-w-sm flex-1 flex-col items-start rounded-2xl bg-white dark:bg-zinc-900 p-6 shadow-md min-h-[500px]"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4, delay: index * 0.2 }}
           >
             <img
               src={testimonial.image}
               alt={testimonial.author}
               className="mb-4 h-40 w-full rounded-xl object-cover"
             />
-            <p className="mb-4 text-xl leading-snug">{testimonial.text}</p>
-            <div className="mt-auto w-full border-t border-zinc-300 dark:border-zinc-700 pt-4">
-              <p className="font-bold">{testimonial.author}</p>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">Udaipur</p>
+            <p className="mb-4 text-lg leading-snug text-black dark:text-gray-300">
+              {testimonial.text}
+            </p>
+            <div className="mt-auto w-full border-t border-gray-300 dark:border-gray-700 pt-4">
+              <p className="font-bold text-blue-900 dark:text-white">
+                {testimonial.author}
+              </p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">Udaipur</p>
             </div>
           </motion.div>
         ))}

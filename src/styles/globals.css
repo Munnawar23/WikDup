@@ -121,6 +121,15 @@
   }
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    font-family: "Work Sans", sans-serif;
+    background: #012c23;
 }

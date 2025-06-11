@@ -11,21 +11,21 @@ const Services = () => {
 
   return (
     <section
-      className="bg-sky-50 md:mt-0 -mt-10 text-emerald-950 dark:bg-gray-900 dark:text-white py-2"
       id="services"
+      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-200 py-16 md:py-24"
     >
-      <div className="container mx-auto">
+      <div className="w-full container mx-auto px-4">
         <h2 className="mb-8 text-center text-4xl font-semibold tracking-tighter">
           Services
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-2 lg:space-x-4">
+        <div className="flex flex-wrap justify-center gap-3 lg:space-x-4 mb-8">
           {servicesData.map((tab) => (
             <Button
               key={tab.id}
               variant={activeTab.id === tab.id ? "default" : "outline"}
               onClick={() => setActiveTab(tab)}
-              className="text-md lg:text-base w-[80%] md:w-auto"
+              className="text-md w-[80%] md:w-auto lg:text-base"
             >
               {tab.title}
             </Button>
@@ -37,24 +37,22 @@ const Services = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mt-8 flex flex-col items-center gap-4 lg:flex-row"
+          className="flex flex-col lg:flex-row items-center justify-center gap-6"
         >
-          {/* Smaller Card on mobile */}
-          <Card className="w-[90%] max-w-sm sm:max-w-md lg:max-w-xl lg:w-1/2">
-            <CardContent className="p-4 sm:p-6">
+          <Card className="w-[90%] max-w-xl lg:w-1/2">
+            <CardContent className="p-6">
               <h3 className="mb-4 text-2xl sm:text-3xl lg:text-4xl font-semibold">
                 {activeTab.content}
               </h3>
-              <p className="text-lg sm:text-lg lg:text-2xl tracking-tighter text-emerald-950 dark:text-white">
+              <p className="text-lg lg:text-2xl tracking-tight text-blue-900 dark:text-white">
                 {activeTab.description}
               </p>
             </CardContent>
           </Card>
 
-          {/* Smaller image on mobile */}
-          <div className="p-4 lg:w-1/2">
+          <div className="lg:w-1/2 flex justify-center">
             <img
-              className="w-[85%] sm:w-[80%] lg:w-[90%] h-auto rounded-xl shadow-lg mx-auto"
+              className="w-[85%] sm:w-[80%] lg:w-[90%] h-auto rounded-xl shadow-lg"
               src={activeTab.imgSrc}
               alt={activeTab.title}
             />
