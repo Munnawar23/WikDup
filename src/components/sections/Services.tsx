@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <section
-      className="bg-sky-50 text-emerald-950 dark:bg-gray-900 dark:text-white py-2"
+      className="bg-sky-50 md:mt-0 -mt-10 text-emerald-950 dark:bg-gray-900 dark:text-white py-2"
       id="services"
     >
       <div className="container mx-auto">
@@ -25,7 +25,7 @@ const Services = () => {
               key={tab.id}
               variant={activeTab.id === tab.id ? "default" : "outline"}
               onClick={() => setActiveTab(tab)}
-              className="text-sm lg:text-base"
+              className="text-md lg:text-base w-[80%] md:w-auto"
             >
               {tab.title}
             </Button>
@@ -39,20 +39,22 @@ const Services = () => {
           transition={{ duration: 0.5 }}
           className="mt-8 flex flex-col items-center gap-4 lg:flex-row"
         >
-          <Card className="w-full max-w-xl lg:w-1/2">
-            <CardContent className="p-6">
-              <h3 className="mb-4 text-3xl lg:text-4xl font-semibold">
+          {/* Smaller Card on mobile */}
+          <Card className="w-[90%] max-w-sm sm:max-w-md lg:max-w-xl lg:w-1/2">
+            <CardContent className="p-4 sm:p-6">
+              <h3 className="mb-4 text-2xl sm:text-3xl lg:text-4xl font-semibold">
                 {activeTab.content}
               </h3>
-              <p className="text-lg tracking-tighter text-emerald-950 dark:text-white lg:text-2xl">
+              <p className="text-lg sm:text-lg lg:text-2xl tracking-tighter text-emerald-950 dark:text-white">
                 {activeTab.description}
               </p>
             </CardContent>
           </Card>
 
+          {/* Smaller image on mobile */}
           <div className="p-4 lg:w-1/2">
             <img
-              className="h-auto w-auto lg:w-[90%] rounded-xl shadow-lg"
+              className="w-[85%] sm:w-[80%] lg:w-[90%] h-auto rounded-xl shadow-lg mx-auto"
               src={activeTab.imgSrc}
               alt={activeTab.title}
             />

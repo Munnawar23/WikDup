@@ -33,7 +33,7 @@ export default function Navbar() {
           {/* Left: Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold text-emerald-950 dark:text-emerald-100">
-              MySite
+              WikDup
             </Link>
           </div>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
                   <NavigationMenuLink asChild>
                     <Link
                       href={link.href}
-                      className="text-emerald-950 dark:text-emerald-100 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors"
+                      className="text-emerald-950 dark:text-emerald-100 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -89,18 +89,18 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-base text-emerald-950 dark:text-emerald-100 hover:text-emerald-700 dark:hover:text-emerald-300 w-full"
+                className="text-xl text-emerald-950 dark:text-emerald-100 hover:text-emerald-700 dark:hover:text-emerald-300 w-full"
                 onClick={() => setIsOpen(false)} // close menu on click
               >
                 {link.name}
               </Link>
             ))}
-            <Button size="sm" className="w-full mt-2">
+            <Button size="lg" className="w-full mt-2">
               Contact
             </Button>
             <Button
               variant="ghost"
-              size="sm"
+              size="lg"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               className="w-full"
             >

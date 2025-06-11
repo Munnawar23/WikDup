@@ -6,10 +6,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const Faq = () => {
   return (
     <section
-      className=" w-full bg-sky-50 dark:bg-gray-900 text-emerald-950 dark:text-white px-4 py-12 md:px-8"
+      className=" w-full bg-sky-50 dark:bg-gray-900 text-emerald-950 dark:text-white px-4 md:py-16 py-8  md:px-8"
       id="faq"
     >
-      <div className="flex flex-col gap-12 lg:flex-row">
+      <div className="flex flex-col gap-0 md:gap-12 lg:flex-row">
         {/* Left column */}
         <div className="lg:w-1/3">
           <h2 className="mb-8 text-4xl font-semibold tracking-tighter">

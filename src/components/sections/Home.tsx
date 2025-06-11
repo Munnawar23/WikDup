@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white"
+      className="flex min-h-screen flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white"
     >
       {/* Left section */}
-      <div className="main w-full pt-24 md:pt-0 p-8 md:w-1/2">
+      <div className="w-full md:pt-0 -mt-16 md:mt-0 p-8 md:w-1/2">
         {/* Small round images → now Avatar */}
         <div className="mb-4 flex space-x-2">
           {[1, 2, 3].map((n, index) => (
@@ -50,7 +50,7 @@ const Hero = () => {
         >
           <Button
             size="lg"
-            className="mt-8 flex items-center gap-2 rounded-full bg-blue-700 text-white hover:bg-[#1e40af]"
+            className="mt-8 flex items-center gap-2 cursor-pointer rounded-full bg-blue-700 text-white hover:bg-[#1e40af]"
             onClick={() => window.open("mailto:munawwarh48@gmail.com")}
           >
             <span>Contact Us</span>
@@ -60,7 +60,7 @@ const Hero = () => {
       </div>
 
       {/* Right section (main hero image) */}
-      <div className="heroImage w-full md:w-1/2 lg:pl-28 lg:p-8">
+     <div className="heroImage w-full md:w-1/2 lg:pl-28 lg:p-8 -mt-36 md:mt-0">
         <motion.img
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

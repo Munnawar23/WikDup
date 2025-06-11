@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <section
-      className="flex items-center justify-center flex-col bg-sky-50 dark:bg-gray-900 px-6 text-emerald-950 dark:text-white py-16"
+      className="flex  items-center min-h-screen pt-2 justify-center flex-col bg-sky-50 dark:bg-gray-900 px-6 text-emerald-950 dark:text-white py-16"
       id="about"
     >
       <h2 className="mb-8 text-center text-4xl font-semibold tracking-tighter">
@@ -52,7 +52,7 @@ const About = () => {
         className="mb-8 max-w-4xl px-4"
       >
         <Card className="bg-white dark:bg-gray-800 shadow-lg">
-          <CardContent className="p-6 text-center text-xl lg:text-3xl leading-relaxed text-emerald-950 dark:text-white">
+          <CardContent className="p-6 text-center text-lg lg:text-3xl leading-relaxed text-emerald-950 dark:text-white">
             {ABOUT.aboutUsText}
           </CardContent>
         </Card>

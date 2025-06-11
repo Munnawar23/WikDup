@@ -12,7 +12,7 @@ const Projects = () => {
 
   return (
     <section
-      className="w-full bg-sky-50 dark:bg-gray-900 text-emerald-950 dark:text-white mx-auto px-4 py-12 md:px-8"
+      className="w-full bg-sky-50 -mt-8 md:mt-0 dark:bg-gray-900 text-emerald-950 dark:text-white mx-auto px-4 py-12 md:px-8"
       id="projects"
     >
       <div>

@@ -23,16 +23,5 @@ export const PROJECTS = [
       duration: "1 month",
     },
   },
-  {
-    year: "2024",
-    title: "Emailer API",
-    description: "A secure, developer-friendly transactional email API.",
-    details:
-      "Built with the MERN stack, this project features authentication, rate limiting, and easy integration for third-party services to streamline email communication for developers.",
-    imageUrl: "/project-3.webp",
-    figures: {
-      techStack: "MERN Stack",
-      duration: "2 months",
-    },
-  },
+
 ];
