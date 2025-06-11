@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center bg-sky-50 text-black dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-200 py-16 md:py-24 px-4 md:px-8"
+      className="flex flex-col items-center bg-sky-50 text-black dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24 px-4 md:px-8"
     >
       <h2 className="mb-12 text-center text-4xl font-semibold tracking-tighter text-blue-900 dark:text-white">
         Projects

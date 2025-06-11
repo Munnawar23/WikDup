@@ -3,7 +3,7 @@
 import {
   RiInstagramFill,
   RiFacebookFill,
-  RiTwitterFill,
+  RiLinkedinFill,
 } from "@remixicon/react";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-1">
             <Phone className="w-6 h-6 mb-1" />
             <span className="font-medium text-lg">Phone</span>
-            <span>(123) 456‑7890</span>
+            <span>(+91) 9166410744</span>
           </div>
           <div className="flex flex-col items-center space-y-1">
             <Mail className="w-6 h-6 mb-1" />
@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-1">
             <MapPin className="w-6 h-6 mb-1" />
             <span className="font-medium text-lg">Address</span>
-            <span>1234 Renovation Ave, Suite 100, Your City, ST 56789</span>
+            <span>Udaipur, Rajasthan, India</span>
           </div>
         </div>
 
@@ -62,17 +62,17 @@ const Footer = () => {
               <RiFacebookFill />
             </a>
             <a
-              href="https://www.twitter.com"
+              href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
+              aria-label="LinkedIn"
               className="hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
             >
-              <RiTwitterFill />
+              <RiLinkedinFill />
             </a>
           </div>
           <p className="text-sm text-center md:text-right">
-            &copy; 2024 VastuSpaze. All rights reserved.
+            &copy; 2025 WikDup. All rights reserved.
           </p>
         </div>
       </div>

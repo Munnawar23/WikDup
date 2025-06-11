@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-200 py-16 md:py-24"
+      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24"
     >
       <div className="w-full container mx-auto px-4">
         <h2 className="mb-8 text-center text-4xl font-semibold tracking-tighter">

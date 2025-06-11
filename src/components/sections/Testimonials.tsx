@@ -13,7 +13,7 @@ const Testimonials = () => {
   return (
     <section
       id="reviews"
-      className="flex flex-col items-center bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-200 py-16 md:py-24 px-4 md:px-8"
+      className="flex flex-col items-center bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24 px-4 md:px-8"
     >
       <h2 className="mb-12 text-center text-4xl font-semibold tracking-tighter text-blue-900 dark:text-white">
         What Clients Say
@@ -28,7 +28,7 @@ const Testimonials = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 0.4, delay: index * 0.2 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
           >
             <img
               src={testimonial.image}

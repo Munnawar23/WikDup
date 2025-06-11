@@ -11,7 +11,7 @@ import {
 const Faq = () => {
   return (
     <section
-      className="w-full bg-sky-50 dark:bg-gray-900 border-b border-gray-600 dark:border-gray-200 px-4 md:py-16 py-8 md:px-8"
+      className="w-full bg-sky-50 dark:bg-gray-900 border-b border-gray-600 dark:border-gray-300 px-4 md:py-16 py-8 md:px-8"
       id="faq"
     >
       <div className="flex flex-col gap-0 md:gap-12 lg:flex-row">
