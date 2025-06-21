@@ -13,9 +13,9 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center bg-sky-50 text-black dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24 px-4 md:px-8"
+      className="flex flex-col items-center bg-sky-50 text-black dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 py-16 md:py-24 px-4 md:px-8"
     >
-      <h2 className="mb-12 text-center text-4xl font-semibold tracking-tighter text-blue-900 dark:text-white">
+      <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-blue-900 dark:text-white uppercase">
         Projects
       </h2>
 
@@ -35,26 +35,26 @@ const Projects = () => {
               <img
                 src={project.imageUrl}
                 alt={project.title}
-                className="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-3xl object-cover shadow-lg"
+                className="w-full h-[220px] sm:h-[300px] md:h-[400px] rounded-3xl object-cover shadow-lg"
               />
             </div>
 
             {/* Right: Text */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0 px-4">
-              <p className="mb-2 text-base text-black dark:text-gray-300">
+              <p className="mb-2 text-sm text-black dark:text-gray-300">
                 {project.year}
               </p>
-              <h3 className="mb-2 text-2xl font-semibold text-blue-900 dark:text-white">
+              <h3 className="mb-2 text-xl font-semibold text-blue-900 dark:text-white">
                 {project.title}
               </h3>
-              <p className="mb-2 text-3xl lg:text-4xl font-medium text-blue-900 dark:text-white">
+              <p className="mb-2 text-2xl lg:text-3xl font-medium text-blue-900 dark:text-white">
                 {project.description}
               </p>
-              <p className="mb-4 text-lg lg:text-2xl text-black dark:text-gray-300">
+              <p className="mb-4 text-base lg:text-lg text-black dark:text-gray-300">
                 {project.details}
               </p>
 
-              <table className="min-w-full text-lg lg:text-xl border-t border-b border-gray-300 dark:border-gray-600">
+              <table className="min-w-full text-base lg:text-lg border-t border-b border-gray-300 dark:border-gray-600">
                 <tbody>
                   <tr className="border-b border-gray-300 dark:border-gray-600">
                     <td className="px-6 py-4 font-medium">Tech Stack</td>

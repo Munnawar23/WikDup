@@ -19,10 +19,10 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24"
+      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 py-16 md:py-24"
     >
       <div className="w-full flex flex-col items-center justify-center text-center px-4">
-        <h2 className="mb-8 text-4xl font-semibold tracking-tighter">
+        <h2 className="mb-8 text-3xl font-semibold tracking-tight uppercase">
           About Us
         </h2>
 
@@ -37,7 +37,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: image.delay }}
             >
-              <Avatar className="h-[150px] w-[150px] lg:h-[300px] lg:w-[300px] rounded-3xl shadow-lg">
+              <Avatar className="h-[120px] w-[120px] lg:h-[220px] lg:w-[220px] rounded-3xl shadow-lg">
                 <AvatarImage src={image.src} alt={image.alt} className="object-cover" />
                 <AvatarFallback>Img</AvatarFallback>
               </Avatar>
@@ -54,8 +54,8 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-4xl w-full px-4"
         >
-          <Card className="bg-white dark:bg-gray-800 shadow-lg">
-            <CardContent className="p-6 text-lg md:text-xl lg:text-2xl leading-relaxed text-blue-900 dark:text-white">
+          <Card className="bg-white dark:bg-gray-800 shadow-lg border border-gray-300 dark:border-gray-300">
+            <CardContent className="p-6 text-base md:text-lg lg:text-xl leading-relaxed text-blue-900 dark:text-white">
               {ABOUT.aboutUsText}
             </CardContent>
           </Card>

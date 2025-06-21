@@ -12,10 +12,10 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24"
+      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 py-16 md:py-24"
     >
       <div className="w-full container mx-auto px-4">
-        <h2 className="mb-8 text-center text-4xl font-semibold tracking-tighter">
+        <h2 className="mb-8 text-center text-3xl font-semibold tracking-tight uppercase">
           Services
         </h2>
 
@@ -25,7 +25,7 @@ const Services = () => {
               key={tab.id}
               variant={activeTab.id === tab.id ? "default" : "outline"}
               onClick={() => setActiveTab(tab)}
-              className="text-md w-[80%] md:w-auto lg:text-base"
+              className="text-sm w-[80%] md:w-auto lg:text-base"
             >
               {tab.title}
             </Button>
@@ -39,12 +39,12 @@ const Services = () => {
           transition={{ duration: 0.5 }}
           className="flex flex-col lg:flex-row items-center justify-center gap-6"
         >
-          <Card className="w-[90%] max-w-xl lg:w-1/2">
+          <Card className="w-[90%] max-w-xl lg:w-1/2 border border-gray-300 dark:border-gray-600">
             <CardContent className="p-6">
-              <h3 className="mb-4 text-2xl sm:text-3xl lg:text-4xl font-semibold">
+              <h3 className="mb-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                 {activeTab.content}
               </h3>
-              <p className="text-lg lg:text-2xl tracking-tight text-blue-900 dark:text-white">
+              <p className="text-base lg:text-lg tracking-tight text-blue-900 dark:text-white">
                 {activeTab.description}
               </p>
             </CardContent>
@@ -52,7 +52,7 @@ const Services = () => {
 
           <div className="lg:w-1/2 flex justify-center">
             <img
-              className="w-[85%] sm:w-[80%] lg:w-[90%] h-auto rounded-xl shadow-lg"
+              className="w-[75%] sm:w-[70%] lg:w-[80%] h-auto rounded-xl shadow-lg"
               src={activeTab.imgSrc}
               alt={activeTab.title}
             />

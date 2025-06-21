@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-8"
+      className="flex flex-wrap items-center bg-sky-50 text-blue-900 dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 py-16 md:py-8"
     >
       {/* Left section */}
       <div className="w-full px-6 md:w-1/2">

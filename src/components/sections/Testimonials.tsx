@@ -6,16 +6,16 @@ import { TESTIMONIALS } from "@/data/testimonialsData";
 
 const Testimonials = () => {
   const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0 },
   };
 
   return (
     <section
       id="reviews"
-      className="flex flex-col items-center bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white border-b border-gray-600 dark:border-gray-300 py-16 md:py-24 px-4 md:px-8"
+      className="flex flex-col items-center bg-sky-50 text-gray-900 dark:bg-gray-900 dark:text-white border-b border-gray-300 dark:border-gray-600 py-16 md:py-24 px-4 md:px-8"
     >
-      <h2 className="mb-12 text-center text-4xl font-semibold tracking-tighter text-blue-900 dark:text-white">
+      <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-blue-900 dark:text-white uppercase">
         What Clients Say
       </h2>
 
@@ -27,18 +27,18 @@ const Testimonials = () => {
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <img
               src={testimonial.image}
               alt={testimonial.author}
               className="mb-4 h-40 w-full rounded-xl object-cover"
             />
-            <p className="mb-4 text-lg leading-snug text-black dark:text-gray-300">
+            <p className="mb-4 text-base leading-snug text-black dark:text-gray-300">
               {testimonial.text}
             </p>
-            <div className="mt-auto w-full border-t border-gray-300 dark:border-gray-700 pt-4">
+            <div className="mt-auto w-full border-t border-gray-300 dark:border-gray-600 pt-4">
               <p className="font-bold text-blue-900 dark:text-white">
                 {testimonial.author}
               </p>

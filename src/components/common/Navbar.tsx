@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -33,11 +34,23 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="flex-shrink-0 text-3xl font-bold text-blue-900 dark:text-white"
+            className="flex-shrink-0"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           >
-            <Link href="/">WikDup</Link>
+            <Link href="/" className="flex items-center space-x-3">
+              <Image
+                src="/dark-logo.webp"
+                alt="WikDup Logo"
+                width={50}
+                height={50}
+                className="object-contain mt-1"
+                priority
+              />
+              <span className="text-3xl font-bold text-blue-900 dark:text-white">
+                WikDup
+              </span>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -87,16 +100,25 @@ export default function Navbar() {
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: (navLinks.length + 1) * 0.1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: (navLinks.length + 1) * 0.1,
+                  }}
                   whileHover={{ scale: 1.1, rotate: 180 }}
                   whileTap={{ scale: 0.9 }}
                 >
                   <Button
                     variant="ghost"
                     size="icon"
-                    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                    onClick={() =>
+                      setTheme(theme === "dark" ? "light" : "dark")
+                    }
                   >
-                    {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                    {theme === "dark" ? (
+                      <Sun className="h-5 w-5" />
+                    ) : (
+                      <Moon className="h-5 w-5" />
+                    )}
                   </Button>
                 </motion.div>
               </NavigationMenuItem>
